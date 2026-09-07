@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA Climate Dynamics | Architectural Thermodynamic Engineering</title>
+  <meta name="description" content="AURA engineers whisper-quiet, hospital-grade climate architecture, geothermal heat pumps, and flush linear air diffusers for bespoke modern residences.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Island Navigation -->
+  <header class="nav-wrapper">
+    <nav class="glass-nav" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-glyph">✦</span>
+        <span class="brand-text">AURA</span>
+        <span class="brand-badge">THERMAL ENG.</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#systems" class="nav-link">Architectures</a>
+        <a href="#simulator" class="nav-link">Climate Simulator</a>
+        <a href="#filtration" class="nav-link">CleanAir™ Tech</a>
+        <a href="#specifications" class="nav-link">Specifications</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#simulator" class="btn-pill-sm">
+          <span>Calculate Load</span>
+          <span class="icon-circle">↗</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-inner">
+      <a href="#systems" class="drawer-link">Architectures</a>
+      <a href="#simulator" class="drawer-link">Climate Simulator</a>
+      <a href="#filtration" class="drawer-link">CleanAir™ Tech</a>
+      <a href="#specifications" class="drawer-link">Specifications</a>
+      <a href="#contact" class="btn-pill">
+        <span>Request Engineering Consultation</span>
+        <span class="icon-circle">→</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-eyebrow-wrapper">
+          <div class="eyebrow-pill">
+            <span class="pulse-dot"></span>
+            <span>NEXT-GEN GEOTHERMAL & INVISIBLE DIFFUSION</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Whisper-Quiet Climate.<br>
+          <span class="gradient-text">Invisible Architecture.</span>
+        </h1>
+
+        <p class="hero-subtext">
+          Precision thermodynamics engineered for architectural residences. Hospital-grade MERV 16 filtration, sub-18dB whisper acoustics, and seamless ceiling integration.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#simulator" class="btn-pill">
+            <span>Launch Thermal Simulator</span>
+            <span class="icon-circle">⚡</span>
+          </a>
+          <a href="#systems" class="btn-pill-ghost">
+            <span>Explore Systems</span>
+            <span class="icon-circle">↓</span>
+          </a>
+        </div>
+
+        <!-- Telemetry Stats Bar -->
+        <div class="telemetry-bar double-bezel">
+          <div class="telemetry-core">
+            <div class="telemetry-item">
+              <span class="telemetry-val">17.8 <span class="unit">dBA</span></span>
+              <span class="telemetry-lbl">Audible Sound Floor</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-val">32.5 <span class="unit">SEER2</span></span>
+              <span class="telemetry-lbl">Peak Efficiency Ratio</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-val">99.97<span class="unit">%</span></span>
+              <span class="telemetry-lbl">Aerosol Filtration (0.1µm)</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-val">24/7</span>
+              <span class="telemetry-lbl">Precision Cloud Diagnostics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Visual Container with Real Bespoke Image -->
+        <div class="hero-media-wrapper double-bezel">
+          <div class="hero-media-core">
+            <img src="assets/hero.jpg" alt="AURA Flush Linear Slot Ceiling Diffusers in Architectural Living Space" class="hero-img" loading="eager">
+            <div class="media-overlay">
+              <div class="media-tag">
+                <span class="tag-pin"></span>
+                <span>PROJECT 044 // ASPEN MEADOWS RESIDENCE — AURA SYSTEM ZERO</span>
+              </div>
+              <div class="media-readout">
+                <span class="readout-code">ZONE 01: 71.4°F</span>
+                <span class="readout-status">FLOW: 120 CFM (SILENT)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Systems Bento Grid Section -->
+    <section id="systems" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-label">SYSTEM ARCHITECTURES</span>
+          <h2 class="section-title">Built for spaces where mechanical equipment must never be seen or heard.</h2>
+          <p class="section-desc">Conventional HVAC trades architectural beauty for bulky metal grilles. AURA embeds aerodynamic flow channels directly into standard drywall and wood millwork.</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento 1: Large Feature Card -->
+          <div class="bento-card bento-wide double-bezel">
+            <div class="bento-core">
+              <div class="card-badge">FLAGSHIP ARCHITECTURE</div>
+              <h3 class="card-title">AURA Linear™ Slot Diffusers</h3>
+              <p class="card-text">
+                Only 12mm wide opening. Sits perfectly flush with acoustic wood slats, venetian plaster, or reveal baseboards. Engineered with Coanda-effect laminar aerodynamics so cool air blankets the ceiling without drafts.
+              </p>
+              <div class="feature-tags">
+                <span class="f-tag">12mm Architectural Reveal</span>
+                <span class="f-tag">Zero Fasteners Visible</span>
+                <span class="f-tag">Black Oxide / Custom Powdercoat</span>
+              </div>
+              <div class="card-metric-box">
+                <div class="metric">
+                  <span class="m-val">0.02 in. wg</span>
+                  <span class="m-lbl">Ultra-Low Static Pressure</span>
+                </div>
+                <div class="metric">
+                  <span class="m-val">&lt; NC-15</span>
+                  <span class="m-lbl">Noise Criterion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 2: Geothermal -->
+          <div class="bento-card double-bezel">
+            <div class="bento-core">
+              <div class="card-badge">GEOTHERMAL HEAT PUMP</div>
+              <h3 class="card-title">VORTEX Ground-Source Core</h3>
+              <p class="card-text">
+                Harnesses stable underground 55°F bedrock temperatures. Variable-speed inverter compressor adjusts output in 1% micro-increments.
+              </p>
+              <div class="card-footer-metric">
+                <span class="big-metric">420%</span>
+                <span class="metric-caption">Thermodynamic Coefficient of Performance (COP 4.2)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 3: CleanAir -->
+          <div class="bento-card double-bezel">
+            <div class="bento-core">
+              <div class="card-badge">PATHOGEN PURIFICATION</div>
+              <h3 class="card-title">CleanAir™ Active Bi-Polar</h3>
+              <p class="card-text">
+                Generates millions of natural oxygen ions per cubic meter to neutralize PM2.5 wildfire smoke, mold spores, and airborne allergens in seconds.
+              </p>
+              <div class="card-footer-metric">
+                <span class="big-metric">0.00 ppm</span>
+                <span class="metric-caption">Zero Ozone Generation (UL 2998 Verified)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 4: Smart Cloud -->
+          <div class="bento-card bento-wide double-bezel">
+            <div class="bento-core">
+              <div class="card-badge">INTELLIGENCE SUITE</div>
+              <h3 class="card-title">Micro-Zone Dynamic Flow Balancer</h3>
+              <p class="card-text">
+                Every bedroom, wine cellar, and art gallery receives dedicated pneumatic dampers with sub-half-degree precision, controlled via BACnet, Control4, Crestron, or Home Assistant.
+              </p>
+              <div class="feature-tags">
+                <span class="f-tag">Direct Crestron & Savant API</span>
+                <span class="f-tag">Sub-minute Thermal Calibration</span>
+                <span class="f-tag">Predictive Weather Inversion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Signature Module: Thermal Load & SEER2 Simulator -->
+    <section id="simulator" class="section simulator-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow-label">INTERACTIVE COMPUTATION ENGINE</span>
+          <h2 class="section-title">Architectural Thermodynamic Calculator</h2>
+          <p class="section-desc">Estimate your thermal tonnage requirement, electrical consumption reduction, and annual utility savings with AURA Variable-Inverter technology.</p>
+        </div>
+
+        <div class="sim-wrapper double-bezel">
+          <div class="sim-core">
+            <div class="sim-controls">
+              <!-- Mode Switch -->
+              <div class="control-group">
+                <label class="control-lbl">Operational Cycle</label>
+                <div class="toggle-pills" id="modeSelector">
+                  <button type="button" class="pill-option active" data-mode="cool">Cooling Mode (Chilled Air)</button>
+                  <button type="button" class="pill-option" data-mode="heat">Heating Mode (Thermal Radiant)</button>
+                </div>
+              </div>
+
+              <!-- Square Footage Slider -->
+              <div class="control-group">
+                <div class="control-header">
+                  <label for="sqftRange" class="control-lbl">Conditioned Living Area</label>
+                  <span class="slider-display" id="sqftDisplay">3,800 sq ft</span>
+                </div>
+                <input type="range" id="sqftRange" min="1200" max="15000" step="100" value="3800" class="aura-slider">
+                <div class="slider-limits">
+                  <span>1,200 sq ft</span>
+                  <span>15,000+ sq ft</span>
+                </div>
+              </div>
+
+              <!-- Ambient Delta Slider -->
+              <div class="control-group">
+                <div class="control-header">
+                  <label for="tempDelta" class="control-lbl">Outdoor vs Indoor Temp Differential (ΔT)</label>
+                  <span class="slider-display" id="deltaDisplay">28°F Differential</span>
+                </div>
+                <input type="range" id="tempDelta" min="10" max="55" step="1" value="28" class="aura-slider">
+                <div class="slider-limits">
+                  <span>10°F (Mild)</span>
+                  <span>55°F (Extreme Heat/Cold)</span>
+                </div>
+              </div>
+
+              <!-- Ceiling Height Selector -->
+              <div class="control-group">
+                <label class="control-lbl">Architectural Ceiling Height</label>
+                <div class="select-wrapper">
+                  <select id="ceilingHeight" class="aura-select">
+                    <option value="1.0">Standard (9 - 10 ft)</option>
+                    <option value="1.25" selected>Architectural Volume (12 - 14 ft)</option>
+                    <option value="1.5">Cathedral / Double Height (16 - 22 ft)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Calculation Readout Display -->
+            <div class="sim-results">
+              <div class="results-header">
+                <span class="status-indicator live"></span>
+                <span>REAL-TIME THERMAL TELEMETRY</span>
+              </div>
+
+              <div class="result-card">
+                <span class="res-lbl">Required Thermal Capacity</span>
+                <div class="res-num-row">
+                  <span class="res-big" id="btuOutput">76,000</span>
+                  <span class="res-unit">BTU/h</span>
+                </div>
+                <span class="res-sub" id="tonnageOutput">6.33 Tons Dynamic Capacity</span>
+              </div>
+
+              <div class="result-card">
+                <span class="res-lbl">Estimated SEER2 Rating</span>
+                <div class="res-num-row accent-cyan">
+                  <span class="res-big" id="seerOutput">28.4</span>
+                  <span class="res-unit">SEER2</span>
+                </div>
+                <span class="res-sub">DOE 2026 Tier 1 Premium Certified</span>
+              </div>
+
+              <div class="result-card">
+                <span class="res-lbl">Projected Annual Energy Savings</span>
+                <div class="res-num-row accent-amber">
+                  <span class="res-currency">$</span>
+                  <span class="res-big" id="savingsOutput">2,840</span>
+                  <span class="res-unit">/ yr</span>
+                </div>
+                <span class="res-sub">vs. Standard 14 SEER Baseline Systems</span>
+              </div>
+
+              <button class="btn-pill full-width" id="openQuoteBtn">
+                <span>Lock In Architectural Engineering Specs</span>
+                <span class="icon-circle">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- The Visual Gallery Showcase -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-label">VISUAL SHOWCASE</span>
+          <h2 class="section-title">Stunning Spaces & Elegant Details.</h2>
+          <p class="section-desc">Experience the seamless integration of our premium architectural solutions through our exclusive showcase.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/dental.jpg" alt="Gallery Image 1" class="gallery-img" loading="lazy">
+            <div class="gallery-caption">
+              <h4 class="gallery-caption-title">Pristine Environments</h4>
+              <span class="gallery-caption-sub">Ultra Premium Quality</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/hvac.jpg" alt="Gallery Image 2" class="gallery-img" loading="lazy">
+            <div class="gallery-caption">
+              <h4 class="gallery-caption-title">Architectural Flow</h4>
+              <span class="gallery-caption-sub">Seamless Integration</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/realestate.jpg" alt="Gallery Image 3" class="gallery-img" loading="lazy">
+            <div class="gallery-caption">
+              <h4 class="gallery-caption-title">Luxury Living</h4>
+              <span class="gallery-caption-sub">Daylight & Elegance</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/solar.jpg" alt="Gallery Image 4" class="gallery-img" loading="lazy">
+            <div class="gallery-caption">
+              <h4 class="gallery-caption-title">Sustainable Future</h4>
+              <span class="gallery-caption-sub">Clean Energy Focus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Air Filtration Detail -->
+    <section id="filtration" class="section">
+      <div class="container">
+        <div class="split-layout">
+          <div class="split-copy">
+            <span class="eyebrow-label">CLEANAIR™ TECHNOLOGY</span>
+            <h2 class="section-title">Cleanroom Purity For Everyday Living.</h2>
+            <p class="section-desc">
+              Every breath inside an AURA-conditioned residence passes through three distinct stages of micro-filtration. Viruses, smoke particles, and pollen are filtered before entering your bedrooms.
+            </p>
+            <ul class="spec-list">
+              <li>
+                <strong>Stage 01: Electrostatic Pre-Filter</strong>
+                <span>Captures coarse dust, lint, and pet dander with washable lifetime core.</span>
+              </li>
+              <li>
+                <strong>Stage 02: Hospital MERV 16 Deep Pleat</strong>
+                <span>Removes 99.97% of particulates down to 0.3 microns including bacteria and smoke.</span>
+              </li>
+              <li>
+                <strong>Stage 03: Granular Coconut Carbon Bed</strong>
+                <span>Adsorbs VOCs, off-gassing paints, cooking fumes, and urban vehicle emissions.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="split-card double-bezel">
+            <div class="split-card-core">
+              <div class="acoustic-meter">
+                <span class="meter-title">ACOUSTIC CHAMBER RATING</span>
+                <div class="decibel-scale">
+                  <div class="scale-bar">
+                    <div class="scale-fill" style="width: 18%;"></div>
+                  </div>
+                  <div class="scale-labels">
+                    <span class="active-label">AURA (18 dB)</span>
+                    <span>Whisper (30 dB)</span>
+                    <span>Standard HVAC (55 dB)</span>
+                  </div>
+                </div>
+                <p class="meter-footnote">Tested in reverberation room per ISO 3741 standard. Equivalent to rustling leaves in a calm forest.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Modal -->
+    <div class="modal-overlay" id="quoteModal" aria-hidden="true">
+      <div class="modal-shell double-bezel">
+        <div class="modal-core">
+          <div class="modal-header">
+            <h3>Request Engineering Review</h3>
+            <button class="modal-close" id="closeModalBtn">&times;</button>
+          </div>
+          <p class="modal-sub">Submit your project blueprints or load parameters for an architect-ready mechanical schedule.</p>
+          <form id="consultationForm" class="aura-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="clientName">Full Name</label>
+                <input type="text" id="clientName" required placeholder="Alexander Vance">
+              </div>
+              <div class="form-field">
+                <label for="clientEmail">Email Address</label>
+                <input type="email" id="clientEmail" required placeholder="alexander@architect.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="projectLocation">Project City / Climate Zone</label>
+                <input type="text" id="projectLocation" required placeholder="Aspen, CO (Zone 6)">
+              </div>
+              <div class="form-field">
+                <label for="projectType">Property Type</label>
+                <select id="projectType">
+                  <option>New Architectural Build</option>
+                  <option>Historic Luxury Retrofit</option>
+                  <option>High-Rise Penthouse</option>
+                  <option>Commercial Gallery / Studio</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn-pill full-width">
+              <span>Submit for Engineering Feasibility</span>
+              <span class="icon-circle">✓</span>
+            </button>
+            <p class="form-notice" id="formSuccessNotice" style="display:none;">
+              ✓ Request received. An AURA Senior Mechanical Principal will contact you within 4 business hours.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Process Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow-label">OUR APPROACH</span>
+          <h2 class="section-title">How We Deliver Perfection.</h2>
+          <p class="section-desc">A methodical, refined process designed for the most discerning clientele.</p>
+        </div>
+        <div class="process-grid">
+          
+            <div class="process-step">
+              <span class="step-number">01</span>
+              <h3 class="step-title">Architectural Audit</h3>
+              <p class="step-desc">We conduct a comprehensive thermal load analysis of your property, taking into account sun paths, fenestration, and architectural volumes.</p>
+            </div>
+          
+            <div class="process-step">
+              <span class="step-number">02</span>
+              <h3 class="step-title">Custom Engineering</h3>
+              <p class="step-desc">Our mechanical engineers design a bespoke micro-diffused network that integrates invisibly with your ceiling materials and millwork.</p>
+            </div>
+          
+            <div class="process-step">
+              <span class="step-number">03</span>
+              <h3 class="step-title">Precision Execution</h3>
+              <p class="step-desc">Master technicians install the geothermal core and linear slot diffusers with millimeter precision, tuning the system for whisper-quiet operation.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-label">CLIENT EXPERIENCES</span>
+          <h2 class="section-title">Words from our Patrons.</h2>
+        </div>
+        <div class="testimonial-grid">
+          
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p class="testimonial-text">AURA transformed our Malibu property. The climate is perfectly balanced, and the hardware is completely invisible. An architectural triumph.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">E</div>
+                <div class="author-info">
+                  <h4>E. Sterling</h4>
+                  <span>Architectural Designer</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p class="testimonial-text">Finally, an HVAC system that doesn't ruin the ceiling plane. The clean air filtration is immediately noticeable, and the silence is golden.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">M</div>
+                <div class="author-info">
+                  <h4>M. Vance</h4>
+                  <span>Private Estate Owner</span>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow-label">KNOWLEDGE BASE</span>
+          <h2 class="section-title">Frequently Asked Questions.</h2>
+        </div>
+        <div class="faq-grid">
+          
+            <div class="faq-item">
+              <h4 class="faq-q">Is the system truly whisper-quiet?</h4>
+              <p class="faq-a">Yes. Operating at a sound floor below 18 dBA, it is acoustically invisible, equivalent to the ambient sound of a quiet library.</p>
+            </div>
+          
+            <div class="faq-item">
+              <h4 class="faq-q">Can the linear diffusers be customized?</h4>
+              <p class="faq-a">Absolutely. We offer bespoke powder-coating and flush-mount solutions for travertine, Venetian plaster, and acoustic wood slats.</p>
+            </div>
+          
+            <div class="faq-item">
+              <h4 class="faq-q">What is the timeline for a bespoke installation?</h4>
+              <p class="faq-a">Depending on the architectural scale, engineering takes 2-4 weeks, with installation seamlessly phased alongside your general contractor.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title">Ready to Experience True Comfort?</h2>
+          <p class="cta-desc">Request an engineering consultation and elevate your property's climate architecture.</p>
+          <a href="#contact" class="btn-pill">
+            <span>Contact AURA Climate Dynamics</span>
+            <span class="icon-circle">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-glyph">✦</span>
+        <span class="brand-name">AURA CLIMATE DYNAMICS</span>
+        <p class="brand-strap">Architectural mechanical engineering, geothermal power, and micro-diffused thermal comfort.</p>
+      </div>
+      <div class="footer-meta">
+        <span class="server-badge">RUNNING ON LOCALHOST:5001</span>
+        <span class="copyright">© 2026 AURA Thermodynamics LLC. All engineering patents registered.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

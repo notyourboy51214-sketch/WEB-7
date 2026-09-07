@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AURA Climate Dynamics | Architectural Thermodynamic Engineering</title>
+  <title>Veritas Legal Partners | Ultra-Premium</title>
   <meta name="description" content="AURA engineers whisper-quiet, hospital-grade climate architecture, geothermal heat pumps, and flush linear air diffusers for bespoke modern residences.">
   
   <!-- Fonts -->
@@ -12,6 +12,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
+
+  <style id="niche-override">
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital@0;1&display=swap');
+    
+    :root {
+      --font-display: 'Playfair Display', serif !important;
+      --font-body: 'Lora', serif !important;
+      --bg-page: #fdfbf7 !important;
+      --bg-surface: #ffffff !important;
+      --text-primary: #1a1a1a !important;
+      --accent-cyan: #0f172a !important;
+      --radius-outer: 0 !important;
+      --radius-inner: 0 !important;
+    }
+    .bento-card, .bento-core, .gallery-item { border-radius: 0 !important; border: 1px solid #d1d5db; }
+    .hero-title { letter-spacing: -0.01em; }
+    .bento-grid { display: flex; flex-direction: column; gap: 2rem; }
+    .bento-card { max-width: 800px; margin: 0 auto; width: 100%; text-align: center; border-top: 3px solid #1a1a1a; }
+  
+  </style>
 </head>
 <body>
 
@@ -20,15 +40,15 @@
     <nav class="glass-nav" aria-label="Main Navigation">
       <a href="#hero" class="nav-brand">
         <span class="brand-glyph">✦</span>
-        <span class="brand-text">AURA</span>
-        <span class="brand-badge">THERMAL ENG.</span>
+        <span class="brand-text">VERITAS</span>
+        <span class="brand-badge">LEGAL PARTNERS</span>
       </a>
 
       <div class="nav-links">
-        <a href="#systems" class="nav-link">Architectures</a>
-        <a href="#simulator" class="nav-link">Climate Simulator</a>
-        <a href="#filtration" class="nav-link">CleanAir™ Tech</a>
-        <a href="#specifications" class="nav-link">Specifications</a>
+        <a href="#systems" class="nav-link">Practice Areas</a>
+        <a href="#simulator" class="nav-link">Attorneys</a>
+        <a href="#filtration" class="nav-link">Case Results</a>
+        <a href="#specifications" class="nav-link">Insights</a>
       </div>
 
       <div class="nav-actions">
@@ -47,10 +67,10 @@
   <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer" id="mobileDrawer">
     <div class="drawer-inner">
-      <a href="#systems" class="drawer-link">Architectures</a>
-      <a href="#simulator" class="drawer-link">Climate Simulator</a>
-      <a href="#filtration" class="drawer-link">CleanAir™ Tech</a>
-      <a href="#specifications" class="drawer-link">Specifications</a>
+      <a href="#systems" class="drawer-link">Practice Areas</a>
+      <a href="#simulator" class="drawer-link">Attorneys</a>
+      <a href="#filtration" class="drawer-link">Case Results</a>
+      <a href="#specifications" class="drawer-link">Insights</a>
       <a href="#contact" class="btn-pill">
         <span>Request Engineering Consultation</span>
         <span class="icon-circle">→</span>
@@ -69,10 +89,7 @@
           </div>
         </div>
 
-        <h1 class="hero-title">
-          Whisper-Quiet Climate.<br>
-          <span class="gradient-text">Invisible Architecture.</span>
-        </h1>
+        <h1 class="hero-title">Veritas Legal Partners</h1>
 
         <p class="hero-subtext">
           Precision thermodynamics engineered for architectural residences. Hospital-grade MERV 16 filtration, sub-18dB whisper acoustics, and seamless ceiling integration.
@@ -218,199 +235,7 @@
       </div>
     </section>
 
-    <!-- Interactive Signature Module: Thermal Load & SEER2 Simulator -->
-    <section id="simulator" class="section simulator-section">
-      <div class="container">
-        <div class="section-header center">
-          <span class="eyebrow-label">INTERACTIVE COMPUTATION ENGINE</span>
-          <h2 class="section-title">Architectural Thermodynamic Calculator</h2>
-          <p class="section-desc">Estimate your thermal tonnage requirement, electrical consumption reduction, and annual utility savings with AURA Variable-Inverter technology.</p>
-        </div>
-
-        <div class="sim-wrapper double-bezel">
-          <div class="sim-core">
-            <div class="sim-controls">
-              <!-- Mode Switch -->
-              <div class="control-group">
-                <label class="control-lbl">Operational Cycle</label>
-                <div class="toggle-pills" id="modeSelector">
-                  <button type="button" class="pill-option active" data-mode="cool">Cooling Mode (Chilled Air)</button>
-                  <button type="button" class="pill-option" data-mode="heat">Heating Mode (Thermal Radiant)</button>
-                </div>
-              </div>
-
-              <!-- Square Footage Slider -->
-              <div class="control-group">
-                <div class="control-header">
-                  <label for="sqftRange" class="control-lbl">Conditioned Living Area</label>
-                  <span class="slider-display" id="sqftDisplay">3,800 sq ft</span>
-                </div>
-                <input type="range" id="sqftRange" min="1200" max="15000" step="100" value="3800" class="aura-slider">
-                <div class="slider-limits">
-                  <span>1,200 sq ft</span>
-                  <span>15,000+ sq ft</span>
-                </div>
-              </div>
-
-              <!-- Ambient Delta Slider -->
-              <div class="control-group">
-                <div class="control-header">
-                  <label for="tempDelta" class="control-lbl">Outdoor vs Indoor Temp Differential (ΔT)</label>
-                  <span class="slider-display" id="deltaDisplay">28°F Differential</span>
-                </div>
-                <input type="range" id="tempDelta" min="10" max="55" step="1" value="28" class="aura-slider">
-                <div class="slider-limits">
-                  <span>10°F (Mild)</span>
-                  <span>55°F (Extreme Heat/Cold)</span>
-                </div>
-              </div>
-
-              <!-- Ceiling Height Selector -->
-              <div class="control-group">
-                <label class="control-lbl">Architectural Ceiling Height</label>
-                <div class="select-wrapper">
-                  <select id="ceilingHeight" class="aura-select">
-                    <option value="1.0">Standard (9 - 10 ft)</option>
-                    <option value="1.25" selected>Architectural Volume (12 - 14 ft)</option>
-                    <option value="1.5">Cathedral / Double Height (16 - 22 ft)</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <!-- Live Calculation Readout Display -->
-            <div class="sim-results">
-              <div class="results-header">
-                <span class="status-indicator live"></span>
-                <span>REAL-TIME THERMAL TELEMETRY</span>
-              </div>
-
-              <div class="result-card">
-                <span class="res-lbl">Required Thermal Capacity</span>
-                <div class="res-num-row">
-                  <span class="res-big" id="btuOutput">76,000</span>
-                  <span class="res-unit">BTU/h</span>
-                </div>
-                <span class="res-sub" id="tonnageOutput">6.33 Tons Dynamic Capacity</span>
-              </div>
-
-              <div class="result-card">
-                <span class="res-lbl">Estimated SEER2 Rating</span>
-                <div class="res-num-row accent-cyan">
-                  <span class="res-big" id="seerOutput">28.4</span>
-                  <span class="res-unit">SEER2</span>
-                </div>
-                <span class="res-sub">DOE 2026 Tier 1 Premium Certified</span>
-              </div>
-
-              <div class="result-card">
-                <span class="res-lbl">Projected Annual Energy Savings</span>
-                <div class="res-num-row accent-amber">
-                  <span class="res-currency">$</span>
-                  <span class="res-big" id="savingsOutput">2,840</span>
-                  <span class="res-unit">/ yr</span>
-                </div>
-                <span class="res-sub">vs. Standard 14 SEER Baseline Systems</span>
-              </div>
-
-              <button class="btn-pill full-width" id="openQuoteBtn">
-                <span>Lock In Architectural Engineering Specs</span>
-                <span class="icon-circle">→</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- The Visual Gallery Showcase -->
-    <section id="gallery" class="section gallery-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow-label">VISUAL SHOWCASE</span>
-          <h2 class="section-title">Stunning Spaces & Elegant Details.</h2>
-          <p class="section-desc">Experience the seamless integration of our premium architectural solutions through our exclusive showcase.</p>
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="assets/dental.jpg" alt="Gallery Image 1" class="gallery-img" loading="lazy">
-            <div class="gallery-caption">
-              <h4 class="gallery-caption-title">Pristine Environments</h4>
-              <span class="gallery-caption-sub">Ultra Premium Quality</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/hvac.jpg" alt="Gallery Image 2" class="gallery-img" loading="lazy">
-            <div class="gallery-caption">
-              <h4 class="gallery-caption-title">Architectural Flow</h4>
-              <span class="gallery-caption-sub">Seamless Integration</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/realestate.jpg" alt="Gallery Image 3" class="gallery-img" loading="lazy">
-            <div class="gallery-caption">
-              <h4 class="gallery-caption-title">Luxury Living</h4>
-              <span class="gallery-caption-sub">Daylight & Elegance</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/solar.jpg" alt="Gallery Image 4" class="gallery-img" loading="lazy">
-            <div class="gallery-caption">
-              <h4 class="gallery-caption-title">Sustainable Future</h4>
-              <span class="gallery-caption-sub">Clean Energy Focus</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Air Filtration Detail -->
-    <section id="filtration" class="section">
-      <div class="container">
-        <div class="split-layout">
-          <div class="split-copy">
-            <span class="eyebrow-label">CLEANAIR™ TECHNOLOGY</span>
-            <h2 class="section-title">Cleanroom Purity For Everyday Living.</h2>
-            <p class="section-desc">
-              Every breath inside an AURA-conditioned residence passes through three distinct stages of micro-filtration. Viruses, smoke particles, and pollen are filtered before entering your bedrooms.
-            </p>
-            <ul class="spec-list">
-              <li>
-                <strong>Stage 01: Electrostatic Pre-Filter</strong>
-                <span>Captures coarse dust, lint, and pet dander with washable lifetime core.</span>
-              </li>
-              <li>
-                <strong>Stage 02: Hospital MERV 16 Deep Pleat</strong>
-                <span>Removes 99.97% of particulates down to 0.3 microns including bacteria and smoke.</span>
-              </li>
-              <li>
-                <strong>Stage 03: Granular Coconut Carbon Bed</strong>
-                <span>Adsorbs VOCs, off-gassing paints, cooking fumes, and urban vehicle emissions.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="split-card double-bezel">
-            <div class="split-card-core">
-              <div class="acoustic-meter">
-                <span class="meter-title">ACOUSTIC CHAMBER RATING</span>
-                <div class="decibel-scale">
-                  <div class="scale-bar">
-                    <div class="scale-fill" style="width: 18%;"></div>
-                  </div>
-                  <div class="scale-labels">
-                    <span class="active-label">AURA (18 dB)</span>
-                    <span>Whisper (30 dB)</span>
-                    <span>Standard HVAC (55 dB)</span>
-                  </div>
-                </div>
-                <p class="meter-footnote">Tested in reverberation room per ISO 3741 standard. Equivalent to rustling leaves in a calm forest.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- Consultation Modal -->
     <div class="modal-overlay" id="quoteModal" aria-hidden="true">
@@ -536,22 +361,19 @@
           <h2 class="section-title">Frequently Asked Questions.</h2>
         </div>
         <div class="faq-grid">
-          
             <div class="faq-item">
-              <h4 class="faq-q">Is the system truly whisper-quiet?</h4>
-              <p class="faq-a">Yes. Operating at a sound floor below 18 dBA, it is acoustically invisible, equivalent to the ambient sound of a quiet library.</p>
+              <h4 class="faq-q">What is your initial consultation process?</h4>
+              <p class="faq-a">We begin with a comprehensive discovery phase to understand your exact requirements and establish a tailored strategy before any commitment.</p>
             </div>
-          
             <div class="faq-item">
-              <h4 class="faq-q">Can the linear diffusers be customized?</h4>
-              <p class="faq-a">Absolutely. We offer bespoke powder-coating and flush-mount solutions for travertine, Venetian plaster, and acoustic wood slats.</p>
+              <h4 class="faq-q">Who will be managing my account?</h4>
+              <p class="faq-a">You will be assigned a dedicated senior partner who serves as your primary point of contact throughout our engagement.</p>
             </div>
-          
             <div class="faq-item">
-              <h4 class="faq-q">What is the timeline for a bespoke installation?</h4>
-              <p class="faq-a">Depending on the architectural scale, engineering takes 2-4 weeks, with installation seamlessly phased alongside your general contractor.</p>
+              <h4 class="faq-q">Do you take on clients outside of your immediate region?</h4>
+              <p class="faq-a">Yes. We work with elite clientele globally and maintain a robust digital infrastructure to support seamless remote collaboration.</p>
             </div>
-          
+          </div>
         </div>
       </div>
     </section>
@@ -560,10 +382,10 @@
     <section class="section">
       <div class="container">
         <div class="cta-box">
-          <h2 class="cta-title">Ready to Experience True Comfort?</h2>
-          <p class="cta-desc">Request an engineering consultation and elevate your property's climate architecture.</p>
+          <h2 class="cta-title">VERITAS LEGAL PARTNERS</h2>
+          <p class="cta-desc">Contact us today to schedule your private consultation.</p>
           <a href="#contact" class="btn-pill">
-            <span>Contact AURA Climate Dynamics</span>
+            <span>Contact Veritas Legal Partners</span>
             <span class="icon-circle">→</span>
           </a>
         </div>
@@ -577,12 +399,12 @@
     <div class="container footer-content">
       <div class="footer-brand">
         <span class="brand-glyph">✦</span>
-        <span class="brand-name">AURA CLIMATE DYNAMICS</span>
-        <p class="brand-strap">Architectural mechanical engineering, geothermal power, and micro-diffused thermal comfort.</p>
+        <span class="brand-name">VERITAS LEGAL PARTNERS</span>
+        <p class="brand-strap">Corporate litigation, catastrophic injury, and elite legal defense.</p>
       </div>
       <div class="footer-meta">
         <span class="server-badge">RUNNING ON LOCALHOST:5001</span>
-        <span class="copyright">© 2026 AURA Thermodynamics LLC. All engineering patents registered.</span>
+        <span class="copyright">© 2026 Veritas Legal Partners. All engineering patents registered.</span>
       </div>
     </div>
   </footer>
